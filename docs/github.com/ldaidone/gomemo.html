@@ -1,0 +1,1690 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-layout="responsive" data-local="true">
+  <head>
+    
+    <script>
+      window.addEventListener('error', window.__err=function f(e){f.p=f.p||[];f.p.push(e)});
+    </script>
+    <script>
+      (function() {
+        const theme = document.cookie.match(/prefers-color-scheme=(light|dark|auto)/)?.[1]
+        if (theme) {
+          document.querySelector('html').setAttribute('data-theme', theme);
+        }
+      }())
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <meta class="js-gtmID" data-gtmid="">
+    <link rel="shortcut icon" href="../../static/shared/icon/favicon.ico">
+    
+  
+    <meta name="robots" content="noindex">
+  
+
+    <link href="../../static/frontend/frontend.min.css%3Fversion=.css" rel="stylesheet">
+    
+    
+  <title>gomemo module - github.com/ldaidone/gomemo - Go Packages</title>
+
+    
+  <link href="../../static/frontend/unit/unit.min.css%3Fversion=.css" rel="stylesheet">
+  
+  <link href="../../static/frontend/unit/main/main.min.css%3Fversion=.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    
+    <script>
+      function loadScript(src, mod = true) {
+        let s = document.createElement('script');
+        s.src = src;
+        if (mod) {
+          s.type = 'module';
+          s.async = true;
+          s.defer = true
+        }
+        document.head.appendChild(s);
+      }
+      loadScript("/third_party/dialog-polyfill/dialog-polyfill.js", false)
+      loadScript("/static/frontend/frontend.js");
+    </script>
+    
+  <header class="go-Header go-Header--full js-siteHeader">
+    <div class="go-Header-inner go-Header-inner--dark">
+      <nav class="go-Header-nav">
+        <a href="http://localhost:8080/" class="js-headerLogo" data-gtmc="nav link"
+            data-test-id="go-header-logo-link" role="heading" aria-level="1">
+          <img class="go-Header-logo" src="../../static/shared/logo/go-white.svg" alt="Go">
+        </a>
+         <div class="skip-navigation-wrapper">
+            <a class="skip-to-content-link" aria-label="Skip to main content" href="gomemo.html#main-content"> Skip to Main Content </a>
+          </div>
+        <div class="go-Header-rightContent">
+          
+<div class="go-SearchForm js-searchForm">
+  <form
+    class="go-InputGroup go-ShortcutKey go-SearchForm-form"
+    action="http://localhost:8080/search"
+    data-shortcut="/"
+    data-shortcut-alt="search"
+    data-gtmc="search form"
+    aria-label="Search for a package"
+    role="search"
+  >
+    <input name="q" class="go-Input js-searchFocus" aria-label="Search for a package" type="search"
+        autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
+        placeholder="Search packages"
+        value="" />
+    <input name="m" value="" hidden>
+    <button class="go-Button go-Button--inverted" aria-label="Submit search">
+      <img
+        class="go-Icon"
+        height="24"
+        width="24"
+        src="../../static/shared/icon/search_gm_grey_24dp.svg"
+        alt=""
+      />
+    </button>
+  </form>
+  <button class="go-SearchForm-expandSearch js-expandSearch" data-gtmc="nav button"
+      aria-label="Open search" data-test-id="expand-search">
+    <img class="go-Icon go-Icon--inverted" height="24" width="24"
+        src="../../static/shared/icon/search_gm_grey_24dp.svg" alt="">
+
+  </button>
+</div>
+
+          <ul class="go-Header-menu">
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="gomemo.html#" data-gtmc="nav link">
+                Why Go
+                <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--why js-desktop-submenu-hover" aria-label="submenu">
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/solutions#case-studies">
+                        <span>Case Studies</span>
+                      </a>
+                    </div>
+                    <p>Common problems companies solve with Go</p>
+                  </li>
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/solutions#use-cases">
+                        <span>Use Cases</span>
+                      </a>
+                    </div>
+                    <p>Stories about how and why companies use Go</p>
+                  </li>
+                  <li class="go-Header-submenuItem">
+                    <div>
+                      <a href="https://go.dev/security/">
+                        <span>Security</span>
+                      </a>
+                    </div>
+                    <p>How Go can help keep you secure by default</p>
+                  </li>
+              </ul>
+            </li>
+            <li class="go-Header-menuItem">
+              <a href="https://go.dev/learn/" data-gtmc="nav link">Learn</a>
+            </li>
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="gomemo.html#" data-gtmc="nav link">
+                Docs
+                <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--docs js-desktop-submenu-hover" aria-label="submenu">
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/effective_go">
+                      <span>Effective Go</span>
+                    </a>
+                  </div>
+                  <p>Tips for writing clear, performant, and idiomatic Go code</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/">
+                      <span>Go User Manual</span>
+                    </a>
+                  </div>
+                  <p>A complete introduction to building software with Go</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://pkg.go.dev/std">
+                      <span>Standard library</span>
+                    </a>
+                  </div>
+                  <p>Reference documentation for Go's standard library</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/doc/devel/release">
+                      <span>Release Notes</span>
+                    </a>
+                  </div>
+                  <p>Learn what's new in each Go release</p>
+                </li>
+              </ul>
+            </li>
+            <li class="go-Header-menuItem go-Header-menuItem--active">
+              <a href="http://localhost:8080/" data-gtmc="nav link">Packages</a>
+            </li>
+            <li class="go-Header-menuItem">
+              <a class="js-desktop-menu-hover" href="gomemo.html#" data-gtmc="nav link">
+                Community
+                <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_drop_down_gm_grey_24dp.svg" alt="submenu dropdown icon">
+              </a>
+              <ul class="go-Header-submenu go-Header-submenu--community js-desktop-submenu-hover" aria-label="submenu">
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/talks/">
+                      <span>Recorded Talks</span>
+                    </a>
+                  </div>
+                  <p>Videos from prior events</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://www.meetup.com/pro/go">
+                      <span>Meetups</span>
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24"
+                            src="../../static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </div>
+                  <p>Meet other local Go developers</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://github.com/golang/go/wiki/Conferences">
+                      <span>Conferences</span>
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24"
+                            src="../../static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </div>
+                  <p>Learn and network with Go developers from around the world</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/blog">
+                      <span>Go blog</span>
+                    </a>
+                  </div>
+                  <p>The Go project's official blog.</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    <a href="https://go.dev/help">
+                      <span>Go project</span>
+                    </a>
+                  </div>
+                  <p>Get help and stay informed from Go</p>
+                </li>
+                <li class="go-Header-submenuItem">
+                  <div>
+                    Get connected
+                  </div>
+                  <p></p>
+                  <div class="go-Header-socialIcons">
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with google-groups (Opens in new window)"
+                        title="Get connected with google-groups (Opens in new window)"
+                        href="https://groups.google.com/g/golang-nuts">
+                        <img src="../../static/shared/logo/social/google-groups.svg" />
+                      </a>
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with github (Opens in new window)"
+                        title="Get connected with github (Opens in new window)"
+                        href="https://github.com/golang">
+                        <img src="../../static/shared/logo/social/github.svg" />
+                      </a>
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with twitter (Opens in new window)"
+                        title="Get connected with twitter (Opens in new window)"
+                        href="https://twitter.com/golang">
+                        <img src="../../static/shared/logo/social/twitter.svg" />
+                      </a>
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with reddit (Opens in new window)"
+                        title="Get connected with reddit (Opens in new window)"
+                        href="https://www.reddit.com/r/golang/">
+                        <img src="../../static/shared/logo/social/reddit.svg" />
+                      </a>
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with slack (Opens in new window)"
+                        title="Get connected with slack (Opens in new window)"
+                        href="https://invite.slack.golangbridge.org/">
+                        <img src="../../static/shared/logo/social/slack.svg" />
+                      </a>
+                      <a
+                        class="go-Header-socialIcon"
+                        aria-label="Get connected with stack-overflow (Opens in new window)"
+                        title=""
+                        href="https://stackoverflow.com/collectives/go">
+                        <img src="../../static/shared/logo/social/stack-overflow.svg" />
+                      </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="go-Header-navOpen js-headerMenuButton go-Header-navOpen--white" data-gtmc="nav button" aria-label="Open navigation">
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <aside class="go-NavigationDrawer js-header">
+    <nav class="go-NavigationDrawer-nav">
+      <div class="go-NavigationDrawer-header">
+        <a href="https://go.dev/">
+          <img class="go-NavigationDrawer-logo" src="../../static/shared/logo/go-blue.svg" alt="Go.">
+        </a>
+      </div>
+      <ul class="go-NavigationDrawer-list">
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="gomemo.html#">
+              <span>Why Go</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="../../static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="gomemo.html#">
+                    <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                        src="../../static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                      </i>
+                      Why Go
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/solutions#case-studies">
+                      Case Studies
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/solutions#use-cases">
+                      Use Cases
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/security/">
+                      Security
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="go-NavigationDrawer-listItem">
+            <a href="https://go.dev/learn/">Learn</a>
+          </li>
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="gomemo.html#">
+              <span>Docs</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="../../static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="gomemo.html#"><i class="material-icons">
+                    <img class="go-Icon" height="24" width="24"
+                      src="../../static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                    </i>
+                    Docs
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/effective_go">
+                      Effective Go
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/">
+                      Go User Manual
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://pkg.go.dev/std">
+                      Standard library
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/doc/devel/release">
+                      Release Notes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="go-NavigationDrawer-listItem go-NavigationDrawer-listItem--active">
+            <a href="http://localhost:8080/">Packages</a>
+          </li>
+          <li class="go-NavigationDrawer-listItem js-mobile-subnav-trigger go-NavigationDrawer-hasSubnav">
+            <a href="gomemo.html#">
+              <span>Community</span>
+              <i class="material-icons">
+                <img class="go-Icon" height="24" width="24"
+                  src="../../static/shared/icon/navigate_next_gm_grey_24dp.svg" alt="">
+              </i>
+            </a>
+            <div class="go-NavigationDrawer go-NavigationDrawer-submenuItem">
+              <div class="go-NavigationDrawer-nav">
+                <div class="go-NavigationDrawer-header">
+                  <a href="gomemo.html#">
+                    <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                        src="../../static/shared/icon/navigate_before_gm_grey_24dp.svg" alt="">
+                    </i>
+                    Community
+                  </a>
+                </div>
+                <ul class="go-NavigationDrawer-list">
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/talks/">
+                      Recorded Talks
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://www.meetup.com/pro/go">
+                      Meetups
+                      <i class="material-icons">
+                      <img class="go-Icon" height="24" width="24"
+                          src="../../static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://github.com/golang/go/wiki/Conferences">
+                      Conferences
+                      <i class="material-icons">
+                        <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/launch_gm_grey_24dp.svg" alt="">
+                      </i>
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/blog">
+                      Go blog
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <a href="https://go.dev/help">
+                      Go project
+                    </a>
+                  </li>
+                  <li class="go-NavigationDrawer-listItem">
+                    <div>Get connected</div>
+                    <div class="go-Header-socialIcons">
+                        <a class="go-Header-socialIcon" href="https://groups.google.com/g/golang-nuts"><img src="../../static/shared/logo/social/google-groups.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://github.com/golang"><img src="../../static/shared/logo/social/github.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://twitter.com/golang"><img src="../../static/shared/logo/social/twitter.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://www.reddit.com/r/golang/"><img src="../../static/shared/logo/social/reddit.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://invite.slack.golangbridge.org/"><img src="../../static/shared/logo/social/slack.svg" /></a>
+                        <a class="go-Header-socialIcon" href="https://stackoverflow.com/collectives/go"><img src="../../static/shared/logo/social/stack-overflow.svg" /></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="go-NavigationDrawer-scrim js-scrim" role="presentation"></div>
+
+    
+  <main class="go-Main" id="main-content">
+    <div class="go-Main-banner" role="alert"></div>
+    <header class="go-Main-header js-mainHeader">
+  
+  
+  <nav class="go-Main-headerBreadcrumb go-Breadcrumb" aria-label="Breadcrumb" data-test-id="UnitHeader-breadcrumb">
+    <ol>
+      
+        
+          <li data-test-id="UnitHeader-breadcrumbItem">
+            <a href="http://localhost:8080/" data-gtmc="breadcrumb link">Discover Packages</a>
+          </li>
+        
+        <li>
+          <a href="gomemo@v0.0.0.html" data-gtmc="breadcrumb link" aria-current="location"
+              data-test-id="UnitHeader-breadcrumbCurrent">
+            github.com/ldaidone/gomemo
+          </a>
+          
+            <button
+              class="go-Button go-Button--inline go-Clipboard js-clipboard"
+              title="Copy path to clipboard.&#10;&#10;github.com/ldaidone/gomemo"
+              aria-label="Copy Path to Clipboard"
+              data-to-copy="github.com/ldaidone/gomemo"
+              data-gtmc="breadcrumbs button"
+            >
+              <img
+                class="go-Icon go-Icon--accented"
+                height="24"
+                width="24"
+                src="../../static/shared/icon/content_copy_gm_grey_24dp.svg"
+                alt=""
+              >
+            </button>
+          
+        
+      </li>
+    </ol>
+  </nav>
+
+  <div class="go-Main-headerContent">
+    
+  <div class="go-Main-headerTitle js-stickyHeader">
+    <a class="go-Main-headerLogo" href="http://localhost:8080/" aria-hidden="true" tabindex="-1" data-gtmc="header link" aria-label="Link to Go Homepage">
+      <img height="78" width="207" src="../../static/shared/logo/go-blue.svg" alt="Go">
+    </a>
+    <h1 class="UnitHeader-titleHeading" data-test-id="UnitHeader-title">gomemo</h1>
+    
+      <span class="go-Chip go-Chip--inverted">module</span>
+    
+    
+      
+        <button
+          class="go-Button go-Button--inline go-Clipboard js-clipboard"
+          title="Copy path to clipboard.&#10;&#10;github.com/ldaidone/gomemo"
+          aria-label="Copy Path to Clipboard"
+          data-to-copy="github.com/ldaidone/gomemo"
+          data-gtmc="title button"
+          tabindex="-1"
+        >
+          <img
+            class="go-Icon go-Icon--accented"
+            height="24"
+            width="24"
+            src="../../static/shared/icon/content_copy_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      
+    
+  </div>
+
+    
+      
+  <div class="go-Main-headerDetails">
+    
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-version">
+    <a href="http://localhost:8080/github.com/ldaidone/gomemo?tab=versions" aria-label="Version: v0.0.0" 
+    data-gtmc="header link" aria-describedby="version-description">
+      <span class="go-textSubtle" aria-hidden="true">Version: </span>
+        v0.0.0
+    </a>
+    <div class="screen-reader-only" id="version-description" hidden>
+      Opens a new window with list of versions in this module.
+    </div>
+    
+    <span class="DetailsHeader-badge--unknown" data-test-id="UnitHeader-minorVersionBanner">
+      <span class="go-Chip DetailsHeader-span--latest">Latest</span>
+      <span class="go-Chip DetailsHeader-span--notAtLatest">
+        Latest
+        
+  <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+    <summary>
+      <img class="go-Icon go-Icon--inverted" height="24" width="24" src="../../static/shared/icon/alert_gm_grey_24dp.svg" alt="Warning">
+    </summary>
+    <p>This package is not in the latest version of its module.</p>
+  </details>
+
+      </span>
+      <a href="gomemo.html" aria-label="Go to Latest Version" data-gtmc="header link">
+        <span class="go-Chip go-Chip--alert DetailsHeader-span--goToLatest">Go to latest</span>
+      </a>
+    </span>
+  </span>
+
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-commitTime">
+    Published: Oct 28, 2025
+  </span>
+
+      
+  <span class="go-Main-headerDetailItem" data-test-id="UnitHeader-licenses">
+    License: <a href="gomemo%3Ftab=licenses.html" data-test-id="UnitHeader-license" 
+        data-gtmc="header link" aria-describedby="license-description">Apache-2.0</a>
+      
+    
+  </span>
+  <div class="screen-reader-only" id="license-description" hidden>
+    Opens a new window with license information.
+  </div>
+
+      
+    
+  </div>
+  
+  <div class="UnitHeader-overflowContainer">
+    <svg class="UnitHeader-overflowImage" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+    </svg>
+    <select class="UnitHeader-overflowSelect js-selectNav" tabindex="-1">
+      <option value="/">Main</option>
+      <option value="/github.com/ldaidone/gomemo?tab=versions">
+        Versions
+      </option>
+      <option value="/github.com/ldaidone/gomemo?tab=licenses">
+        Licenses
+      </option>
+      
+    </select>
+  </div>
+
+
+    
+  </div>
+
+</header>
+    
+      <aside class="go-Main-aside  js-mainAside">
+  
+  <div class="UnitMeta">
+    <h2 class="go-textLabel">Details</h2>
+    
+  <ul class="UnitMeta-details">
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"
+    tabindex="0"
+    role="button"src="../../static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked" aria-label="Valid file, toggle tooltip"height="24" width="24">
+
+          Valid <a href="http://localhost:8080/files/home/leodaido/projects/gomemo/github.com/ldaidone/gomemo//go.mod" target="_blank" rel="noopener">go.mod</a> file
+          <img class="go-Icon" role="button" tabindex="0" src="../../static/shared/icon/help_gm_grey_24dp.svg" alt="" aria-label="Toggle go.mod validity tooltip" height="24" width="24">
+        </summary>
+        <p aria-live="polite" role="tooltip">
+          The Go module system was introduced in Go 1.11 and is the official dependency management
+          solution for Go.
+        </p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"
+    tabindex="0"
+    role="button"src="../../static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked" aria-label="Valid file, toggle tooltip"height="24" width="24">
+
+          Redistributable license
+          <img class="go-Icon" role="button" tabindex="0" src="../../static/shared/icon/help_gm_grey_24dp.svg" alt="" aria-label="Toggle redistributable help tooltip" height="24" width="24">
+        </summary>
+        <p aria-live="polite" role="tooltip">
+          Redistributable licenses place minimal restrictions on how software can be used,
+          modified, and redistributed.
+        </p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon go-Icon--accented"
+    tabindex="0"
+    role="button"src="../../static/shared/icon/check_circle_gm_grey_24dp.svg" alt="checked" aria-label="Valid file, toggle tooltip"height="24" width="24">
+
+          Tagged version
+          <img class="go-Icon" role="button" tabindex="0" src="../../static/shared/icon/help_gm_grey_24dp.svg" alt="" aria-label="Toggle tagged version tooltip" height="24" width="24">
+        </summary>
+        <p aria-live="polite" role="tooltip">Modules with tagged versions give importers more predictable builds.</p>
+      </details>
+    </li>
+    <li>
+      <details class="go-Tooltip js-tooltip" data-gtmc="tooltip">
+        <summary class="go-textSubtle">
+          
+  <img class="go-Icon"
+    tabindex="0"
+    role="button"src="../../static/shared/icon/cancel_gm_grey_24dp.svg" alt="unchecked" aria-label="Missing or invalid file, toggle tooltip"height="24" width="24">
+
+          Stable version
+          <img class="go-Icon" role="button" tabindex="0" aria-label="Toggle stable version tooltip" src="../../static/shared/icon/help_gm_grey_24dp.svg" alt="" height="24" width="24">
+        </summary>
+        <p aria-live="polite" role="tooltip">When a project reaches major version v1 it is considered stable.</p>
+      </details>
+    </li>
+    <li class="UnitMeta-detailsLearn">
+      <a href="http://localhost:8080/about#best-practices" data-gtmc="meta link">Learn more about best practices</a>
+    </li>
+  </ul>
+
+    <h2 class="go-textLabel">Repository</h2>
+    <div class="UnitMeta-repo">
+      
+        <a href="http://localhost:8080/files/home/leodaido/projects/gomemo/github.com/ldaidone/gomemo/" title="/files/home/leodaido/projects/gomemo/github.com/ldaidone/gomemo/" target="_blank" rel="noopener">
+          /files/home/leodaido/projects/gomemo/github.com/ldaidone/gomemo/
+        </a>
+      
+    </div>
+    
+  </div>
+
+</aside>
+    
+    <nav class="go-Main-nav go-Main-nav--sticky js-mainNav" aria-label="Outline">
+  <div class="go-Main-navDesktop">
+    
+  <div class="UnitOutline-jumpTo">
+    <button class="UnitOutline-jumpToInput go-ShortcutKey js-jumpToInput"
+        aria-controls="jump-to-modal"
+        aria-label="Open Jump to Identifier"
+        data-shortcut="f"
+        data-shortcut-alt="find"
+        data-test-id="jump-to-button" data-gtmc="outline button">
+      Jump to ...
+    </button>
+  </div>
+  <ul class="go-Tree js-tree" role="tree" aria-label="Outline">
+    
+      <li class="js-readmeOutline">
+        <a href="gomemo.html#section-readme" data-gtmc="outline link">
+          README
+        </a>
+        
+  <ul id="readme-outline">
+    
+      <li>
+        <a href="gomemo.html#readme-overview" data-gtmc="readme outline link">
+          Overview
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-features" data-gtmc="readme outline link">
+          Features
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-installation" data-gtmc="readme outline link">
+          Installation
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-quick-start" data-gtmc="readme outline link">
+          Quick Start
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-basic-usage" data-gtmc="readme outline link">
+                  Basic Usage
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="gomemo.html#readme-running-examples" data-gtmc="readme outline link">
+                  Running Examples
+                </a>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="gomemo.html#readme-using-makefile-recommended" data-gtmc="readme outline link">
+                          Using Makefile (Recommended)
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="gomemo.html#readme-using-go-commands" data-gtmc="readme outline link">
+                          Using Go Commands
+                        </a>
+                      </li>
+                     
+                  </ul>
+                 
+              </li>
+            
+              <li>
+                <a href="gomemo.html#readme-makefile-targets" data-gtmc="readme outline link">
+                  Makefile Targets
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-heading" data-gtmc="readme outline link">
+          
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-using-memoizefunc-for-automatic-key-generation" data-gtmc="readme outline link">
+                  Using MemoizeFunc for Automatic Key Generation
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-backends" data-gtmc="readme outline link">
+          Backends
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-memory-backend-default" data-gtmc="readme outline link">
+                  Memory Backend (Default)
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="gomemo.html#readme-redis-backend" data-gtmc="readme outline link">
+                  Redis Backend
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-configuration-options" data-gtmc="readme outline link">
+          Configuration Options
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-available-options" data-gtmc="readme outline link">
+                  Available Options
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="gomemo.html#readme-example-configuration" data-gtmc="readme outline link">
+                  Example Configuration
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-performance-metrics" data-gtmc="readme outline link">
+          Performance Metrics
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-architecture" data-gtmc="readme outline link">
+          Architecture
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-core-components" data-gtmc="readme outline link">
+                  Core Components
+                </a>
+                 
+              </li>
+            
+              <li>
+                <a href="gomemo.html#readme-thread-safety" data-gtmc="readme outline link">
+                  Thread Safety
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-development" data-gtmc="readme outline link">
+          Development
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-running-tests" data-gtmc="readme outline link">
+                  Running Tests
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-contributing" data-gtmc="readme outline link">
+          Contributing
+        </a>
+        
+          <ul>
+            
+              <li>
+                <a href="gomemo.html#readme-adding-new-backends" data-gtmc="readme outline link">
+                  Adding New Backends
+                </a>
+                 
+              </li>
+             
+          </ul>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-license" data-gtmc="readme outline link">
+          License
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-support" data-gtmc="readme outline link">
+          Support
+        </a>
+         
+      </li>
+    
+      <li>
+        <a href="gomemo.html#readme-acknowledgments" data-gtmc="readme outline link">
+          Acknowledgments
+        </a>
+         
+      </li>
+     
+  </ul>
+
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="gomemo.html#section-directories" data-gtmc="outline link">
+          Directories
+        </a>
+      </li>
+    
+  </ul>
+
+  </div>
+  <div class="go-Main-navMobile js-mainNavMobile">
+    <label class="go-Label">
+      <select class="go-Select">
+        
+          <option selected disabled>README</option>
+        
+      </select>
+    </label>
+  </div>
+</nav>
+    <article class="go-Main-article js-mainContent">
+  <div class="UnitDetails" data-test-id="UnitDetails" style="display: block;">
+    <div class="UnitDetails-content js-unitDetailsContent" data-test-id="UnitDetails-content">
+      
+        
+  <div class="UnitReadme UnitReadme--expanded js-readme">
+    <h2 class="UnitReadme-title" id="section-readme">
+      <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/chrome_reader_mode_gm_grey_24dp.svg" alt="">
+      README
+      <a class="UnitReadme-idLink" href="gomemo.html#section-readme" title="Go to Readme" aria-label="Go to Readme">¶</a>
+    </h2>
+    
+      <div class="UnitReadme-content" data-test-id="Unit-readmeContent">
+        <div class="Overview-readmeContent js-readmeContent"><h3 class="h1" id="readme-gomemo">Gomemo</h3>
+<p>Elegant, thread-safe memoization for Go — context-aware, pluggable, and generic.</p>
+<p><a href="https://goreportcard.com/report/github.com/ldaidone/gomemo" rel="nofollow"><img src="https://img.shields.io/badge/go%20report-A+-brightgreen.svg?style=flat" alt="Go Report Card"/></a>
+<a href="https://godoc.org/github.com/ldaidone/gomemo" rel="nofollow"><img src="https://godoc.org/github.com/ldaidone/gomemo?status.svg" alt="GoDoc"/></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/></a>
+<a href="https://github.com/ldaidone/gomemo/stargazers" rel="nofollow"><img src="https://img.shields.io/github/stars/ldaidone/gomemo.svg" alt="GitHub stars"/></a>
+<a href="https://github.com/ldaidone/gomemo/actions/workflows/ci.yml" rel="nofollow"><img src="https://github.com/ldaidone/gomemo/actions/workflows/ci.yml/badge.svg" alt="Go CI"/></a>
+<a href="https://github.com/ldaidone/gomemo" rel="nofollow"><img src="https://img.shields.io/badge/Coverage-92.1%25-brightgreen.svg" alt="Coverage"/></a></p>
+<h4 class="h2" id="readme-overview">Overview</h4>
+<p><code>gomemo</code> is a high-performance, thread-safe memoization library for Go that provides automatic deduplication of concurrent calls for the same input. It features pluggable backends, context awareness, automatic TTL management, performance metrics, and comprehensive test coverage (92.1%). The library uses atomic operations for thread safety and provides a clean, idiomatic Go API.</p>
+<h4 class="h2" id="readme-features">Features</h4>
+<ul>
+<li><strong>Thread-safe</strong>: Built with concurrent access in mind using singleflight pattern with atomic operations</li>
+<li><strong>Pluggable backends</strong>: Support for memory, Redis, and other custom backends via registration system</li>
+<li><strong>Context-aware</strong>: Full support for Go contexts for cancellation and timeouts</li>
+<li><strong>TTL management</strong>: Automatic expiration of cached values with configurable cleanup</li>
+<li><strong>Performance metrics</strong>: Comprehensive metrics collection with hit/miss ratios, latency tracking, and real-time statistics</li>
+<li><strong>Generic</strong>: Works with any function type that returns <code>(any, error)</code></li>
+<li><strong>Deduplication</strong>: Prevents duplicate execution of same function with same arguments</li>
+<li><strong>High test coverage</strong>: 92.1% test coverage with comprehensive test suite including race detection</li>
+<li><strong>Cache entry management</strong>: Thread-safe cache entries with versioning and expiration tracking</li>
+</ul>
+<h4 class="h2" id="readme-installation">Installation</h4>
+<pre><code>go get github.com/ldaidone/gomemo
+</code></pre>
+<h4 class="h2" id="readme-quick-start">Quick Start</h4>
+<h5 class="h3" id="readme-basic-usage">Basic Usage</h5>
+<pre><code>package main
+
+import (
+    &#34;context&#34;
+    &#34;fmt&#34;
+    &#34;time&#34;
+    
+    &#34;github.com/ldaidone/gomemo/memo&#34;
+    &#34;github.com/ldaidone/gomemo/pkg/backends&#34;
+)
+
+func main() {
+    // Create a memoizer with memory backend
+    memBackend, _ := backends.NewBackend(&#34;memory&#34;)
+    m := memo.New(
+        memo.WithBackend(memBackend),
+        memo.WithTTL(30*time.Second),
+        memo.WithMetrics(true),
+    )
+
+    expensiveOp := func() (any, error) {
+        time.Sleep(1 * time.Second) // Simulate expensive operation
+        return &#34;computed result&#34;, nil
+    }
+
+    ctx := context.Background()
+    
+    // First call - executes the function and caches the result
+    result1, err := m.Get(ctx, &#34;my-key&#34;, expensiveOp)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf(&#34;First call: %v\n&#34;, result1)
+
+    // Second call - returns cached result immediately
+    result2, err := m.Get(ctx, &#34;my-key&#34;, expensiveOp)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf(&#34;Second call: %v\n&#34;, result2)
+}
+</code></pre>
+<h5 class="h3" id="readme-running-examples">Running Examples</h5>
+<p>The project includes several comprehensive examples demonstrating different use cases:</p>
+<h6 class="h4" id="readme-using-makefile-recommended">Using Makefile (Recommended)</h6>
+<pre><code># Run the metrics demo (default)
+make demo
+
+# Run specific demos
+make demo NAME=metrics     # Performance metrics demonstration
+make demo NAME=fibonacci   # Fibonacci sequence calculation with memoization
+make demo NAME=db_query    # Database query optimization example
+make demo NAME=api         # API response caching example
+
+# Show available demos
+make demo-help
+
+# Show all available make targets
+make info
+</code></pre>
+<h6 class="h4" id="readme-using-go-commands">Using Go Commands</h6>
+<pre><code># Run from project root
+cd /path/to/gomemo
+
+# Run the metrics demo (default)
+go run cmd/examples/*.go
+
+# Run specific demos
+go run cmd/examples/*.go -name metrics
+go run cmd/examples/*.go -name fibonacci
+go run cmd/examples/*.go -name db_query
+go run cmd/examples/*.go -name api
+
+# Show available demos
+go run cmd/examples/*.go -help
+</code></pre>
+<h5 class="h3" id="readme-makefile-targets">Makefile Targets</h5>
+<p>The project includes a comprehensive Makefile for common development tasks:</p>
+<pre><code>make build              # Build example binary to dist/ directory
+make run                # Run example directly
+make test               # Run all tests
+make test-coverage      # Run tests with coverage report
+make vet                # Run go vet for static analysis
+make fmt                # Format code with go fmt
+make tidy               # Tidy go modules
+make check              # Run all checks (vet, fmt, test)
+make demo NAME=&lt;name&gt;   # Run specific demo
+make demo-help          # Show available demos
+make info               # Show all available targets
+make clean              # Clean build artifacts
+</code></pre>
+<h4 class="h2" id="readme-heading"></h4>
+<h5 class="h3" id="readme-using-memoizefunc-for-automatic-key-generation">Using MemoizeFunc for Automatic Key Generation</h5>
+<pre><code>package main
+
+import (
+    &#34;context&#34;
+    &#34;fmt&#34;
+    &#34;time&#34;
+    
+    &#34;github.com/ldaidone/gomemo/memo&#34;
+)
+
+func main() {
+    m := memo.New(memo.WithTTL(30 * time.Second))
+
+    // Create a memoized function
+    expensiveFunc := func(ctx context.Context, x int) (int, error) {
+        time.Sleep(100 * time.Millisecond) // Simulate work
+        return x * 2, nil
+    }
+
+    memoized := m.MemoizeFunc(func(ctx context.Context, args ...any) (any, error) {
+        x := args[0].(int)
+        return expensiveFunc(ctx, x)
+    })
+
+    ctx := context.Background()
+
+    // First call with argument 5 - computes and caches
+    result1, _ := memoized(ctx, 5)
+    fmt.Printf(&#34;Result 1: %v\n&#34;, result1)
+
+    // Second call with argument 5 - returns cached value
+    result2, _ := memoized(ctx, 5)
+    fmt.Printf(&#34;Result 2: %v\n&#34;, result2)
+
+    // Call with different argument - computes and caches
+    result3, _ := memoized(ctx, 10)
+    fmt.Printf(&#34;Result 3: %v\n&#34;, result3)
+}
+</code></pre>
+<h4 class="h2" id="readme-backends">Backends</h4>
+<h5 class="h3" id="readme-memory-backend-default">Memory Backend (Default)</h5>
+<pre><code>// Memory backend with default configuration
+memBackend, err := backends.NewBackend(&#34;memory&#34;)
+if err != nil {
+    panic(err)
+}
+</code></pre>
+<h5 class="h3" id="readme-redis-backend">Redis Backend</h5>
+<pre><code>// Redis backend with connection parameters
+redisBackend := redis.New(&#34;localhost:6379&#34;, &#34;gomemo:&#34;, 0)
+</code></pre>
+<p>The Redis backend provides distributed caching capabilities with automatic serialization of cache entries using gob encoding. It handles TTL through Redis&#39;s native expiration mechanism.</p>
+<p>You can easily add custom backends by implementing the <code>backends.Backend</code> interface and registering them using <code>backends.RegisterBackend()</code>:</p>
+<pre><code>func init() {
+    backends.RegisterBackend(&#34;mybackend&#34;, func() backends.Backend {
+        return NewMyBackend()
+    })
+}
+</code></pre>
+<h4 class="h2" id="readme-configuration-options">Configuration Options</h4>
+<h5 class="h3" id="readme-available-options">Available Options</h5>
+<ul>
+<li><code>WithTTL(duration)</code>: Set time-to-live for cached values</li>
+<li><code>WithBackend(backend)</code>: Specify a cache backend</li>
+<li><code>WithKeyFunc(fn)</code>: Custom function for generating cache keys</li>
+<li><code>WithCleanupInterval(duration)</code>: Set cleanup interval for expired entries</li>
+<li><code>WithCacheOnCancel(bool)</code>: Cache results even when context is cancelled</li>
+<li><code>WithMetrics(bool)</code>: Enable/disable performance metrics</li>
+</ul>
+<h5 class="h3" id="readme-example-configuration">Example Configuration</h5>
+<pre><code>m := memo.New(
+    memo.WithTTL(5 * time.Minute),
+    memo.WithBackend(myCustomBackend),
+    memo.WithMetrics(true),
+    memo.WithKeyFunc(func(args ...any) string {
+        // Custom key generation
+        return fmt.Sprintf(&#34;%v&#34;, args)
+    }),
+)
+</code></pre>
+<h4 class="h2" id="readme-performance-metrics">Performance Metrics</h4>
+<p>The library includes built-in performance metrics:</p>
+<pre><code>// Enable metrics
+m := memo.New(memo.WithMetrics(true))
+
+// Use the memoizer...
+// ...
+
+// Access metrics
+metrics := m.Metrics()
+snapshot := metrics.Snapshot()
+
+fmt.Printf(&#34;Requests: %d\n&#34;, snapshot.Requests)
+fmt.Printf(&#34;Hits: %d\n&#34;, snapshot.Hits)
+fmt.Printf(&#34;Misses: %d\n&#34;, snapshot.Misses)
+fmt.Printf(&#34;Hit Ratio: %.2f%%\n&#34;, snapshot.HitRatio()*100)
+fmt.Printf(&#34;Avg Latency: %v\n&#34;, time.Duration(metrics.AvgLatency())*time.Microsecond)
+</code></pre>
+<h4 class="h2" id="readme-architecture">Architecture</h4>
+<h5 class="h3" id="readme-core-components">Core Components</h5>
+<ul>
+<li><strong>Memoizer</strong>: Main struct that coordinates caching logic and deduplication</li>
+<li><strong>Backend Interface</strong>: Pluggable storage systems (memory, Redis, etc.) with registration system</li>
+<li><strong>SingleFlight</strong>: Deduplication mechanism to prevent duplicate work with context support</li>
+<li><strong>Metrics</strong>: Comprehensive performance tracking with hit ratios, latency calculations, and atomic counters</li>
+<li><strong>CacheEntry</strong>: Thread-safe cache entry with atomic expiration, versioning, and TTL tracking</li>
+<li><strong>HashUtil</strong>: Deterministic key generation with fallback mechanisms for complex types</li>
+</ul>
+<h5 class="h3" id="readme-thread-safety">Thread Safety</h5>
+<p>All operations are thread-safe using atomic operations and mutex synchronization where needed. The library is designed for safe concurrent access across multiple goroutines.</p>
+<h4 class="h2" id="readme-development">Development</h4>
+<h5 class="h3" id="readme-running-tests">Running Tests</h5>
+<pre><code># Run all tests with verbose output
+go test -v ./...
+
+# Run tests with race detection (recommended)
+go test -race -v ./...
+
+# Run with coverage report
+go test -coverpkg=./memo/... -v ./tests/
+
+# Run benchmarks
+go test -bench=. -benchmem ./tests/
+</code></pre>
+<h4 class="h2" id="readme-contributing">Contributing</h4>
+<ol>
+<li>Fork the repository</li>
+<li>Create a feature branch</li>
+<li>Make your changes</li>
+<li>Add tests for new functionality (targeting 92.1%+ coverage)</li>
+<li>Run <code>go test -race ./...</code> to ensure no race conditions</li>
+<li>Submit a pull request</li>
+</ol>
+<h5 class="h3" id="readme-adding-new-backends">Adding New Backends</h5>
+<p>To add a new backend, implement the <code>backends.Backend</code> interface and register it:</p>
+<pre><code>func init() {
+    backends.RegisterBackend(&#34;mybackend&#34;, func() backends.Backend {
+        return NewMyBackend()
+    })
+}
+</code></pre>
+<h4 class="h2" id="readme-license">License</h4>
+<p>MIT License - see the <a href="http://localhost:8080/files/home/leodaido/projects/gomemo/github.com/ldaidone/gomemo/LICENSE" rel="nofollow">LICENSE</a> file for details.</p>
+<h4 class="h2" id="readme-support">Support</h4>
+<p>If you find this library useful, consider <a href="https://www.buymeacoffee.com/leodaido" rel="nofollow">buying me a coffee</a>! ☕️</p>
+<h4 class="h2" id="readme-acknowledgments">Acknowledgments</h4>
+<ul>
+<li>Inspired by the need for efficient memoization in concurrent Go applications</li>
+<li>Built with performance, safety, and ease of use in mind</li>
+<li>Comprehensive test suite with 92.1% coverage ensures reliability</li>
+<li>Pluggable backend architecture enables flexible deployment scenarios</li>
+<li>Atomic operations and proper synchronization provide thread safety</li>
+</ul>
+</div>
+      </div>
+      <button class="UnitReadme-expandLink js-readmeExpand"
+          data-test-id="readme-expand" data-gtmc="readme button"
+          aria-label="Expand Readme">Expand ▾</button>
+      <button class="UnitReadme-collapseLink js-readmeCollapse"
+          data-test-id="readme-collapse" data-gtmc="readme button"
+          aria-label="Expand Readme">Collapse ▴</button>
+    
+  </div>
+
+      
+      
+      
+      
+        
+  <div class="UnitDirectories js-unitDirectories">
+    <h2 class="UnitDirectories-title" id="section-directories">
+      <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/folder_gm_grey_24dp.svg" alt="">
+      Directories
+      <a class="UnitDirectories-idLink" href="gomemo.html#section-directories" title="Go to Directories" aria-label="Go to Directories">¶</a>
+    </h2>
+    <div class="UnitDirectories-toggles">
+      <div class="UnitDirectories-toggleButtons">
+        <button class="js-showInternalDirectories" data-test-id="internal-directories-toggle"
+            data-gtmc="directories button" aria-label="Show Internal Directories">
+          Show internal
+        </button>
+        <button class="js-expandAllDirectories" data-test-id="directories-toggle"
+            data-gtmc="directories button" aria-label="Expand All Directories">
+          Expand all
+        </button>
+      </div>
+    </div>
+    <table class="UnitDirectories-table UnitDirectories-table--tree js-expandableTable"
+          data-test-id="UnitDirectories-table">
+      <tr class="UnitDirectories-tableHeader UnitDirectories-tableHeader--tree">
+        <th>Path</th>
+        <th class="UnitDirectories-desktopSynopsis">Synopsis</th>
+      </tr>
+      
+          
+  
+  <tr data-aria-controls="cmd-examples "
+      class="">
+    <td data-id="cmd" data-aria-owns="cmd-examples ">
+      <div class="UnitDirectories-pathCell">
+        <div><button type="button" class="go-Button go-Button--inline UnitDirectories-toggleButton"
+                aria-expanded="false"
+                aria-label="1 more from"
+                data-aria-controls="cmd-examples "
+                data-aria-labelledby="cmd-button cmd"
+                data-id="cmd-button">
+              <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_right_gm_grey_24dp.svg"
+                  alt="">
+            </button><a href="gomemo@v0.0.0/cmd.html">cmd</a>
+            
+          </div>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr><tr data-id="cmd-examples" class="">
+      <td>
+        <div class="UnitDirectories-subdirectory">
+          <span>
+            <a href="gomemo@v0.0.0/cmd/examples.html">examples</a>
+            
+            <span class="go-Chip go-Chip--inverted">command</span>
+          </span>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr>
+
+      
+          
+  
+  <tr data-aria-controls="internals-hashutil "
+      class="">
+    <td data-id="internals" data-aria-owns="internals-hashutil ">
+      <div class="UnitDirectories-pathCell">
+        <div><button type="button" class="go-Button go-Button--inline UnitDirectories-toggleButton"
+                aria-expanded="false"
+                aria-label="1 more from"
+                data-aria-controls="internals-hashutil "
+                data-aria-labelledby="internals-button internals"
+                data-id="internals-button">
+              <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_right_gm_grey_24dp.svg"
+                  alt="">
+            </button><a href="gomemo@v0.0.0/internals.html">internals</a>
+            
+          </div>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr><tr data-id="internals-hashutil" class="">
+      <td>
+        <div class="UnitDirectories-subdirectory">
+          <span>
+            <a href="gomemo@v0.0.0/internals/hashutil.html">hashutil</a>
+            
+            
+          </span>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr>
+
+      
+          
+  
+  <tr
+      class="">
+    <td data-id="memo" data-aria-owns="">
+      <div class="UnitDirectories-pathCell">
+        <div><a href="gomemo@v0.0.0/memo.html">memo</a>
+            
+          </div>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr></tr>
+
+      
+          
+  
+  <tr data-aria-controls="pkg-backends pkg-backends/memory pkg-backends/redis "
+      class="">
+    <td data-id="pkg" data-aria-owns="pkg-backends pkg-backends/memory pkg-backends/redis ">
+      <div class="UnitDirectories-pathCell">
+        <div><button type="button" class="go-Button go-Button--inline UnitDirectories-toggleButton"
+                aria-expanded="false"
+                aria-label="3 more from"
+                data-aria-controls="pkg-backends pkg-backends/memory pkg-backends/redis "
+                data-aria-labelledby="pkg-button pkg"
+                data-id="pkg-button">
+              <img class="go-Icon" height="24" width="24" src="../../static/shared/icon/arrow_right_gm_grey_24dp.svg"
+                  alt="">
+            </button><a href="gomemo@v0.0.0/pkg.html">pkg</a>
+            
+          </div>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr><tr data-id="pkg-backends" class="">
+      <td>
+        <div class="UnitDirectories-subdirectory">
+          <span>
+            <a href="gomemo@v0.0.0/pkg/backends.html">backends</a>
+            
+            
+          </span>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td><tr data-id="pkg-backends/memory" class="">
+      <td>
+        <div class="UnitDirectories-subdirectory">
+          <span>
+            <a href="gomemo@v0.0.0/pkg/backends/memory.html">backends/memory</a>
+            
+            
+          </span>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td><tr data-id="pkg-backends/redis" class="">
+      <td>
+        <div class="UnitDirectories-subdirectory">
+          <span>
+            <a href="gomemo@v0.0.0/pkg/backends/redis.html">backends/redis</a>
+            
+            
+          </span>
+          <div class="UnitDirectories-mobileSynopsis"></div>
+        </div>
+      </td>
+      <td class="UnitDirectories-desktopSynopsis"></td></tr>
+
+      
+    </table>
+  </div>
+
+      
+    </div>
+  </div>
+  <div id="showInternal-description" hidden> Click to show internal directories. </div>
+  <div id="hideInternal-description" hidden> Click to hide internal directories. </div>
+</article>
+    <footer class="go-Main-footer"></footer>
+  </main>
+
+    
+  <footer class="go-Footer">
+    
+    <div class="go-Footer-links">
+      <div class="go-Footer-linkColumn">
+        <a href="https://go.dev/solutions" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Why Go
+        </a>
+        <a href="https://go.dev/solutions#use-cases" class="go-Footer-link"
+            data-gtmc="footer link">
+          Use Cases
+        </a>
+        <a href="https://go.dev/solutions#case-studies" class="go-Footer-link"
+            data-gtmc="footer link">
+          Case Studies
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://learn.go.dev/" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Get Started
+        </a>
+        <a href="https://play.golang.org" class="go-Footer-link" data-gtmc="footer link">
+          Playground
+        </a>
+        <a href="https://tour.golang.org" class="go-Footer-link" data-gtmc="footer link">
+          Tour
+        </a>
+        <a href="https://stackoverflow.com/questions/tagged/go?tab=Newest" class="go-Footer-link"
+            data-gtmc="footer link">
+          Stack Overflow
+        </a>
+        <a href="https://go.dev/help" class="go-Footer-link"
+            data-gtmc="footer link">
+          Help
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://pkg.go.dev" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Packages
+        </a>
+        <a href="http://localhost:8080/std" class="go-Footer-link" data-gtmc="footer link">
+          Standard Library
+        </a>
+        <a href="http://localhost:8080/golang.org/x" class="go-Footer-link" data-gtmc="footer link">
+          Sub-repositories
+        </a>
+        <a href="https://pkg.go.dev/about" class="go-Footer-link" data-gtmc="footer link">
+          About Go Packages
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://go.dev/project" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          About
+        </a>
+        <a href="https://go.dev/dl/" class="go-Footer-link" data-gtmc="footer link">Download</a>
+        <a href="https://go.dev/blog" class="go-Footer-link" data-gtmc="footer link">Blog</a>
+        <a href="https://github.com/golang/go/issues" class="go-Footer-link" data-gtmc="footer link">
+          Issue Tracker
+        </a>
+        <a href="https://go.dev/doc/devel/release.html" class="go-Footer-link"
+            data-gtmc="footer link">
+          Release Notes
+        </a>
+        <a href="https://go.dev/brand" class="go-Footer-link" data-gtmc="footer link">
+          Brand Guidelines
+        </a>
+        <a href="https://go.dev/conduct" class="go-Footer-link" data-gtmc="footer link">
+          Code of Conduct
+        </a>
+      </div>
+      <div class="go-Footer-linkColumn">
+        <a href="https://www.twitter.com/golang" class="go-Footer-link go-Footer-link--primary"
+            data-gtmc="footer link">
+          Connect
+        </a>
+        <a href="https://www.twitter.com/golang" class="go-Footer-link" data-gtmc="footer link">
+          Twitter
+        </a>
+        <a href="https://github.com/golang" class="go-Footer-link" data-gtmc="footer link">GitHub</a>
+        <a href="https://invite.slack.golangbridge.org/" class="go-Footer-link"
+            data-gtmc="footer link">
+          Slack
+        </a>
+        <a href="https://reddit.com/r/golang" class="go-Footer-link" data-gtmc="footer link">
+          r/golang
+        </a>
+        <a href="https://www.meetup.com/pro/go" class="go-Footer-link" data-gtmc="footer link">
+          Meetup
+        </a>
+        <a href="https://golangweekly.com/" class="go-Footer-link" data-gtmc="footer link">
+          Golang Weekly
+        </a>
+      </div>
+    </div>
+    <div class="go-Footer-bottom">
+      <img class="go-Footer-gopher"  width="1431" height="901"
+          src="../../static/shared/gopher/pilot-bust-1431x901.svg" alt="Gopher in flight goggles">
+      <ul class="go-Footer-listRow">
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/copyright" data-gtmc="footer link">Copyright</a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/tos" data-gtmc="footer link">Terms of Service</a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="http://www.google.com/intl/en/policies/privacy/" data-gtmc="footer link"
+              target="_blank" rel="noopener">
+            Privacy Policy
+          </a>
+        </li>
+        <li class="go-Footer-listItem">
+          <a href="https://go.dev/s/pkgsite-feedback" target="_blank" rel="noopener"
+              data-gtmc="footer link">
+            Report an Issue
+          </a>
+        </li>
+        <li class="go-Footer-listItem">
+          <button class="go-Button go-Button--text go-Footer-toggleTheme js-toggleTheme" aria-label="Theme Toggle">
+            <img data-value="auto" class="go-Icon go-Icon--inverted" height="24" width="24" src="../../static/shared/icon/brightness_6_gm_grey_24dp.svg" alt="System theme">
+            <img data-value="dark" class="go-Icon go-Icon--inverted" height="24" width="24" src="../../static/shared/icon/brightness_2_gm_grey_24dp.svg" alt="Dark theme">
+            <img data-value="light" class="go-Icon go-Icon--inverted" height="24" width="24" src="../../static/shared/icon/light_mode_gm_grey_24dp.svg" alt="Light theme">
+            <p> Theme Toggle </p>
+          </button>
+        </li>
+        <li class="go-Footer-listItem">
+          <button class="go-Button go-Button--text go-Footer-keyboard js-openShortcuts" aria-label="Shorcuts Modal">
+            <img class="go-Icon go-Icon--inverted" height="24" width="24" src="../../static/shared/icon/keyboard_grey_24dp.svg" alt="">
+            <p> Shortcuts Modal </p>
+          </button>
+        </li>
+      </ul>
+      <a class="go-Footer-googleLogo" href="https://google.com" target="_blank"rel="noopener"
+          data-gtmc="footer link">
+        <img class="go-Footer-googleLogoImg" height="24" width="72"
+            src="../../static/shared/logo/google-white.svg" alt="Google logo">
+      </a>
+    </div>
+  </footer>
+
+    
+  <dialog id="jump-to-modal" class="JumpDialog go-Modal go-Modal--md js-modal">
+    <form method="dialog" data-gmtc="jump to form" aria-label="Jump to Identifier">
+      <div class="Dialog-title go-Modal-header">
+        <h2>Jump to</h2>
+        <button
+          class="go-Button go-Button--inline"
+          type="button"
+          data-modal-close
+          data-gtmc="modal button"
+          aria-label="Close"
+        >
+          <img
+            class="go-Icon"
+            height="24"
+            width="24"
+            src="../../static/shared/icon/close_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="JumpDialog-filter">
+        <input class="JumpDialog-input go-Input" autocomplete="off" type="text">
+      </div>
+      <div class="JumpDialog-body go-Modal-body">
+        <div class="JumpDialog-list"></div>
+      </div>
+      <div class="go-Modal-actions">
+        <button class="go-Button" data-test-id="close-dialog">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="ShortcutsDialog go-Modal go-Modal--sm js-modal">
+    <form method="dialog">
+      <div class="go-Modal-header">
+        <h2>Keyboard shortcuts</h2>
+        <button
+          class="go-Button go-Button--inline"
+          type="button"
+          data-modal-close
+          data-gtmc="modal button"
+          aria-label="Close"
+        >
+          <img
+            class="go-Icon"
+            height="24"
+            width="24"
+            src="../../static/shared/icon/close_gm_grey_24dp.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="go-Modal-body">
+        <table>
+          <tbody>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>?</strong></td><td> : This menu</td>
+            </tr>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>/</strong></td><td> : Search site</td>
+            </tr>
+            <tr><td class="ShortcutsDialog-key">
+              <strong>f</strong> or <strong>F</strong></td><td> : Jump to</td>
+            </tr>
+            <tr>
+              <td class="ShortcutsDialog-key"><strong>y</strong> or <strong>Y</strong></td>
+              <td> : Canonical URL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="go-Modal-actions">
+        <button class="go-Button" data-test-id="close-dialog">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+    
+    
+    
+  
+  <div class="js-canonicalURLPath" data-canonical-url-path="/github.com/ldaidone/gomemo@v0.0.0" hidden></div>
+  <div class="js-playgroundVars" data-modulepath="github.com/ldaidone/gomemo" data-version="v0.0.0" hidden></div>
+  <script>
+    loadScript('/static/frontend/unit/main/main.js')
+  </script>
+
+  <script>
+    loadScript('/static/frontend/unit/unit.js')
+  </script>
+
+  </body>
+</html>

@@ -4,7 +4,7 @@ Elegant, thread-safe memoization for Go — context-aware, pluggable, and generi
 
 [![Go Report Card](https://img.shields.io/badge/go%20report-A+-brightgreen.svg?style=flat)](https://goreportcard.com/report/github.com/ldaidone/gomemo)
 [![GoDoc](https://godoc.org/github.com/ldaidone/gomemo?status.svg)](https://godoc.org/github.com/ldaidone/gomemo)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub stars](https://img.shields.io/github/stars/ldaidone/gomemo.svg)](https://github.com/ldaidone/gomemo/stargazers)
 [![Go CI](https://github.com/ldaidone/gomemo/actions/workflows/ci.yml/badge.svg)](https://github.com/ldaidone/gomemo/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/Coverage-92.1%25-brightgreen.svg)](https://github.com/ldaidone/gomemo)
@@ -326,7 +326,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
-If you find this library useful, consider [buying me a coffee](https://www.buymeacoffee.com/your_coffee_link)! ☕️
+If you find this library useful, consider [buying me a coffee](https://www.buymeacoffee.com/leodaido)! ☕️
 
 ## Acknowledgments
 
