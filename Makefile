@@ -94,3 +94,14 @@ info:
 	@echo "  make demo          						- Build and run the demo"
 	@echo "  make clean         						- Clean build artifacts"
 	@echo "  make info          						- Show this information"
+# Show available demos
+.PHONY: demo-help
+demo-help:
+	@echo "Available demos:"
+	@echo "  metrics      - Performance metrics demonstration"
+	@echo "  fibonacci    - Fibonacci sequence calculation with memoization"
+	@echo "  db_query     - Database query optimization example"
+	@echo "  api          - API response caching example"
+	@echo ""
+	@echo "Usage: make demo NAME=<demo>"
+	@echo "Example: make demo NAME=metrics"

@@ -81,6 +81,70 @@ func main() {
 }
 ```
 
+### Running Examples
+
+The project includes several comprehensive examples demonstrating different use cases:
+
+#### Using Makefile (Recommended)
+
+```bash
+# Run the metrics demo (default)
+make demo
+
+# Run specific demos
+make demo NAME=metrics     # Performance metrics demonstration
+make demo NAME=fibonacci   # Fibonacci sequence calculation with memoization
+make demo NAME=db_query    # Database query optimization example
+make demo NAME=api         # API response caching example
+
+# Show available demos
+make demo-help
+
+# Show all available make targets
+make info
+```
+
+#### Using Go Commands
+
+```bash
+# Run from project root
+cd /path/to/gomemo
+
+# Run the metrics demo (default)
+go run cmd/examples/*.go
+
+# Run specific demos
+go run cmd/examples/*.go -name metrics
+go run cmd/examples/*.go -name fibonacci
+go run cmd/examples/*.go -name db_query
+go run cmd/examples/*.go -name api
+
+# Show available demos
+go run cmd/examples/*.go -help
+```
+
+### Makefile Targets
+
+The project includes a comprehensive Makefile for common development tasks:
+
+```bash
+make build              # Build example binary to dist/ directory
+make run                # Run example directly
+make test               # Run all tests
+make test-coverage      # Run tests with coverage report
+make vet                # Run go vet for static analysis
+make fmt                # Format code with go fmt
+make tidy               # Tidy go modules
+make check              # Run all checks (vet, fmt, test)
+make demo NAME=<name>   # Run specific demo
+make demo-help          # Show available demos
+make info               # Show all available targets
+make clean              # Clean build artifacts
+```
+
+##
+
+
 ### Using MemoizeFunc for Automatic Key Generation
 
 ```go
