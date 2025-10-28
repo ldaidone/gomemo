@@ -9,7 +9,7 @@ Elegant, thread-safe memoization for Go — context-aware, pluggable, and generi
 [![Go CI](https://github.com/ldaidone/gomemo/actions/workflows/ci.yml/badge.svg)](https://github.com/ldaidone/gomemo/actions/workflows/ci.yml)
 [![Coverage](https://img.shields.io/badge/Coverage-92.1%25-brightgreen.svg)](https://github.com/ldaidone/gomemo)
 
-[//]: # ([!["Buy Me A Coffee"]&#40;https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png&#41;]&#40;https://buymeacoffee.com/leodaido&#41;)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/leodaido)
 
 ## Overview
 
