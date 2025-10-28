@@ -2,7 +2,7 @@
 
 Elegant, thread-safe memoization for Go — context-aware, pluggable, and generic.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/ldaidone/gomemo)](https://goreportcard.com/badge/github.com/ldaidone/gomemo)
+[![Go Report Card](https://goreportcard.com/badge/github.com/ldaidone/gomemo)(https://goreportcard.com/badge/github.com/ldaidone/gomemo)
 [![GoDoc](https://godoc.org/github.com/ldaidone/gomemo?status.svg)](https://godoc.org/github.com/ldaidone/gomemo)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/ldaidone/gomemo.svg)](https://github.com/ldaidone/gomemo/stargazers)
