@@ -322,7 +322,7 @@ func init() {
 
 ## License
 
-MIT License - see the [LICENSE](LICENSE) file for details.
+Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
