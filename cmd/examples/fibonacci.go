@@ -11,7 +11,7 @@ import (
 	_ "github.com/ldaidone/gomemo/pkg/backends/memory"
 )
 
-func main() {
+func RunFibonacci() {
 	backend, err := backends.NewBackend("memory")
 	if err != nil {
 		panic(err)

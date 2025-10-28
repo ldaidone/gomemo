@@ -33,7 +33,7 @@ func queryUserByID(db *sql.DB, id int) (any, error) {
 	return name, nil
 }
 
-func main() {
+func RunDBQuery() {
 	db := mockSetupDB()
 	defer db.Close()
 

@@ -41,7 +41,7 @@ func fetchPost(id int) (any, error) {
 	return p, nil
 }
 
-func main() {
+func RunAPIMemo() {
 	backend, _ := backends.NewBackend("memory") // or "redis"
 	m := memo.New(
 		memo.WithBackend(backend),
